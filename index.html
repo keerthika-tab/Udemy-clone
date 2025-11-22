@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy</title>
+    <!--Google Style Sheets for Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--My Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="navbar__s1">
+            <h1 class="navbar__s1__title">Udemy</h1>
+        </div>
+        <div class="navbar__s2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Search for anything here, Tech, Business, Art...">
+        </div>
+        <div class="navbar__s3">
+            <p>Courses</p>
+            <p>My Learning</p>
+            <i class="fa-solid fa-cart-shopping" style="color: #01060e;"></i>
+            <i class="fa-solid fa-bell" style="color: #03000a;"></i>
+            <i class="fa-solid fa-user" style="color: #000000;"></i>
+        </div>
+    </div>
+
+    <!--Categories-->
+    <div class="categories">
+        <p>Development</p>
+        <p>Business</p>
+        <p>IT & Software</p>
+        <p>Personal Development</p>
+        <p>Design</p>
+    </div>
+<!--Hero-section-->
+<div class="hero-section">
+    <img src="./images/sale-image.webp" class="hero-img" alt="Sale Banner">
+
+    <div class="hero-box">
+        <h1>Learning that gets you</h1>
+        <p>Skills for your present (and your future). Get started with us.</p>
+    </div>
+</div>
+
+    
+
+    <!--Recommended-->
+    <div class="recommended">
+        <h1 class="recommended__title">Providing Courses</h1>
+        <p class="recommended__subtitle">Pick the best fit</p>
+        <div class="recommended__container">
+            <div class="course-card">
+                <img src="./images/c1.jpg">
+                <h3>2025 Python Data Visualisation Masterclass</h3>
+                <p>Col Steele</p>
+                <p>4.9 ★★★★☆</p>
+                <p>449/- <del>1999</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="./images/c2.jpg">
+                <h3>Basic to Advanced Programming</h3>
+                <p>Col Steele</p>
+                <p>4.9 ★★★★★</p>
+                <p>499/- <del>1499</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="./images/c3.jpg">
+                <h3>Web Develpment Bootcamp With Projects</h3>
+                <p>Col Steele</p>
+                <p>4.9 ★★★★☆</p>
+                <p>599/- <del>1999</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="./images/c4.jpg">
+                <h3>Master UI/UX Designing With Figma</h3>
+                <p>Col Steele</p>
+                <p>4.9 ★★★★☆</p>
+                <p>999/- <del>2999</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Topic-->
+    <div class="topics">
+        <h1 class="topics__title">Topics Recommended for You</h1>
+        <div class="topics__container">
+            <p>Website</p>
+            <p>JavaScript</p>
+            <p>CSS</p>
+            <P>Mongo DB</P>
+            <P>Azure</P>
+            <p>Docker</p>
+            <p>GitHub</p>
+            <p>React JS</p>
+            <p>AWS</p>
+        </div>
+        <div class="suggest-box">
+            <input type="text" placeholder="Suggest a topic..." class="suggest-input">
+            <button class="suggest-btn">Submit</button>
+        </div>
+    </div>
+
+    <!--Popular Section-->
+    <div class="popular">
+        <h1 class="popular__title">Most Popular</h1>
+        <p class="popular__subtitle">Pick the Best for Your Future</p>
+        <div class="popular__container">
+            <div class="course-card">
+                <img src="./images/p1.jpg">
+                <h3>Artificial Intelligence with Mchine Learning</h3>
+                <p>Col Steele</p>
+                <p>449/- <del>1999</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="./images/p2.jpg">
+                <h3>Data Science and Data Structures</h3>
+                <p>Col Steele</p>
+                <p>499/- <del>1499</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="./images/p3.jpg">
+                <h3>Data Structures and Algorithms</h3>
+                <p>Col Steele</p>
+                <p>599/- <del>1999</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="./images/p4.jpg">
+                <h3>System Designing and Data bases</h3>
+                <p>Col Steele</p>
+                <p>999/- <del>2999</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="./images/p5.jpg">
+                <h3>AWS Cloud Computing and Web Models</h3>
+                <p>Col Steele</p>
+                <p>449/- <del>1999</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="./images/p6.jpg">
+                <h3>Data Science with AI and Data Analytics</h3>
+                <p>Col Steele</p>
+                <p>499/- <del>1499</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="./images/p7.jpg">
+                <h3>Career Guidence with Soft Skill Training</h3>
+                <p>Col Steele</p>
+                <p>599/- <del>1999</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="course-card">
+                <img src="./images/p8.jpg">
+                <h3>Machine Learning and Robotics</h3>
+                <p>Col Steele</p>
+                <p>999/- <del>2999</del></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Rating-->
+    <div class="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i><br>
+        <span>4. 9</span>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer__one">
+            <div class="footer__one__s1">
+                <h3>About</h3>
+                <p>Udemy Business</p>
+                <p>Teach on Udemy</p>
+                <p>Get the App</p>
+                <p>About Us</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="footer__one__s2">
+                <h3>Discover Udemy</h3>
+                <p>Careers</p>
+                <p>Blog</p>
+                <p>Help and Support</p>
+                <p>Affiliate</p>
+                <p>Investors</p>
+            </div>
+        </div>
+        <div class="footer__two">
+            <h1>Udemy</h1>
+            <p>&copy; Udemy, Inc</p>
+        </div>
+
+
+</body>
+
+</html>
