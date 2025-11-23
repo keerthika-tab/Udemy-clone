@@ -13,9 +13,11 @@ body {
     justify-content: center;
     border-bottom: solid black 1px;
     gap: 10px;
-    flex-basis: 10%;
-    flex-wrap: nowrap;
-
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar__s1__title {
@@ -30,6 +32,7 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
+
 
 }
 
@@ -46,6 +49,7 @@ body {
     border: none;
     font-size: 16px;
     width: 100%;
+    background-color: transparent;
 }
 
 .navbar__s2 input:focus {
@@ -60,6 +64,28 @@ body {
     font-weight: 500;
 }
 
+/* My Learning Popup */
+.mylearning {
+    position: relative;
+}
+
+.mylearning__Popup {
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    padding: 5px;
+    right: 0;
+    display: none;
+    border-radius: 20px;
+
+}
+
+.mylearning:hover .mylearning__Popup {
+    display: block;
+}
+
 .navbar__s3 p {
     display: flex;
     padding: 8px 12px;
@@ -70,8 +96,7 @@ body {
     justify-content: center;
 }
 
-.navbar__s3 p:hover,
-.navbar__s3 i:hover {
+.navbar__s3 p:hover {
     background-color: #A435F0;
     color: white;
     transform: translateY(-3px);
@@ -109,22 +134,22 @@ body {
 .sale-image {
     width: 100%;
     display: flex;
-    
+
 
 }
 
 .hero-section {
     position: relative;
     width: 100%;
-    
+
 }
 
 .hero-img {
     width: 100%;
     height: auto;
     display: flex;
-    
-    
+
+
 }
 
 .hero-box {
@@ -139,9 +164,9 @@ body {
     padding: 25px;
     display: block;
     border-radius: 10px;
-    
 
-    
+
+
 }
 
 .hero-box h1 {
@@ -160,7 +185,7 @@ body {
 
 .hero-box:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18) !important;
-    
+
 }
 
 @media (max-width: 768px) {
@@ -183,14 +208,14 @@ body {
 
 }
 
-.recommended__container{
+.recommended__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 10px;
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
- 
+
 }
 
 .popular__container {
@@ -201,13 +226,16 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 @media(max-width: 768px) {
+
     .recommended__container,
     .popular__container {
         width: 100%;
         gap: 10px;
     }
 }
+
 .recommended__title {
     font-size: 30px;
     font-weight: 600;
@@ -258,13 +286,14 @@ body {
 .topics {
     padding: 10px;
 }
+
 .topics-box {
     width: 100%;
     max-width: 600px;
     background: #ffffff;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
 }
 
@@ -293,7 +322,8 @@ body {
 .topics:hover {
     background: #e6e6e6;
 }
-.topics__title{
+
+.topics__title {
     text-decoration: underline;
 }
 
@@ -382,7 +412,7 @@ body {
     background-color: #8b1ccf;
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(164, 53, 240, 0.4);
-    
+
 }
 
 .popular {
@@ -392,7 +422,7 @@ body {
 .popular__container {
     margin-top: 10px;
     flex-basis: 20%;
-    
+
 }
 
 .popular__title {
